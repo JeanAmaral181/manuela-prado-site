@@ -553,6 +553,31 @@ em { font-style: italic; }
 .contato-ig svg { width: 16px; height: 16px; }
 .contato-ig:hover { color: var(--dark); }
 
+.epilacao-precos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.epilacao-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(201,167,112,0.1);
+}
+.epilacao-item:last-child { border-bottom: none; }
+.epilacao-label {
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.55);
+  letter-spacing: 0.05em;
+}
+.epilacao-valor {
+  font-family: var(--ff-display);
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
 /* ---- FOOTER ---- */
 .site-footer {
   padding: 3rem 0;
