@@ -370,6 +370,10 @@ em { font-style: italic; }
 .portfolio-img-wrap img {
   transition: transform 0.6s ease;
 }
+.portfolio-img-wrap img.img-contain {
+  object-fit: contain;
+  background: var(--cream-dark);
+}
 .portfolio-card:hover .portfolio-img-wrap img { transform: scale(1.04); }
 
 .portfolio-overlay {

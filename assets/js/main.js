@@ -13,16 +13,31 @@
   // Para adicionar foto nova: copie uma linha, cole abaixo, troque o nome e categoria.
   // ====================================================
   var FOTOS = [
-    { file: 'lash-1.jpg',        category: 'lash',         label: 'Lash Lifting' },
-    { file: 'lash-2.jpg',        category: 'lash',         label: 'Lash Lifting' },
-    { file: 'lash-3.jpg',        category: 'lash',         label: 'Lash Lifting' },
-    { file: 'design-henna-1.jpg',category: 'sobrancelha',  label: 'Design com Henna' },
-    { file: 'design-henna-2.jpg',category: 'sobrancelha',  label: 'Design com Henna' },
-    { file: 'design-1.jpg',      category: 'sobrancelha',  label: 'Design Personalizado' },
-    { file: 'design-2.jpg',      category: 'sobrancelha',  label: 'Design Personalizado' },
-    { file: 'design-3.jpg',      category: 'sobrancelha',  label: 'Design Personalizado' },
-    { file: 'epilacao-1.jpg',    category: 'epilacao',      label: 'Epilação Egípcia' },
-    { file: 'epilacao-2.jpg',    category: 'epilacao',      label: 'Epilação Egípcia' },
+    { file: 'lash-1.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-2.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-3.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-4.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-5.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-6.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-7.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'lash-8.jpg',         category: 'lash',        label: 'Lash Lifting' },
+    { file: 'design-henna-1.jpg', category: 'sobrancelha', label: 'Design com Henna' },
+    { file: 'design-henna-2.jpg', category: 'sobrancelha', label: 'Design com Henna' },
+    { file: 'design-henna-3.jpg', category: 'sobrancelha', label: 'Design com Henna' },
+    { file: 'design-henna-4.jpg', category: 'sobrancelha', label: 'Design com Henna' },
+    { file: 'design-henna-5.jpg', category: 'sobrancelha', label: 'Design com Henna' },
+    { file: 'design-1.jpg',       category: 'sobrancelha', label: 'Design Personalizado', imgClass: 'img-contain' },
+    { file: 'design-2.jpg',       category: 'sobrancelha', label: 'Design Personalizado' },
+    { file: 'design-3.jpg',       category: 'sobrancelha', label: 'Design Personalizado' },
+    { file: 'design-4.jpg',       category: 'sobrancelha', label: 'Design Personalizado' },
+    { file: 'design-5.jpg',       category: 'sobrancelha', label: 'Design Personalizado' },
+    { file: 'design-6.jpg',       category: 'sobrancelha', label: 'Design Personalizado' },
+    { file: 'epilacao-1.jpg',     category: 'epilacao',    label: 'Epilação Egípcia' },
+    { file: 'epilacao-2.jpg',     category: 'epilacao',    label: 'Epilação Egípcia' },
+    { file: 'epilacao-3.jpg',     category: 'epilacao',    label: 'Epilação Egípcia' },
+    { file: 'epilacao-4.jpg',     category: 'epilacao',    label: 'Epilação Egípcia' },
+    { file: 'epilacao-5.jpg',     category: 'epilacao',    label: 'Epilação Egípcia' },
+    { file: 'epilacao-6.jpg',     category: 'epilacao',    label: 'Epilação Egípcia' },
   ];
   // ====================================================
 
@@ -35,7 +50,7 @@
     item.innerHTML =
       '<div class="portfolio-card">' +
         '<div class="portfolio-img-wrap">' +
-          '<img src="assets/img/' + foto.file + '" alt="' + foto.label + '" loading="lazy" />' +
+          '<img src="assets/img/' + foto.file + '" alt="' + foto.label + '" loading="lazy"' + (foto.imgClass ? ' class="' + foto.imgClass + '"' : '') + ' />' +
           '<div class="portfolio-overlay"><span>' + foto.label + '</span></div>' +
         '</div>' +
       '</div>';
