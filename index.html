@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manuela Prado — Lash & Designer. Lash Lifting, Design de Sobrancelhas e Epilação Egípcia em Suzano." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph para compartilhar no WhatsApp/Instagram com preview -->
+  <meta property="og:title" content="Manuela Prado — Lash & Designer" />
+  <meta property="og:description" content="Realçando sua beleza natural. Suzano — Centro." />
+  <meta property="og:type" content="website" />
+
+  <title>Manuela Prado — Lash & Designer</title>
+
+  <!-- Google Fonts: Cormorant Garamond (display) + Jost (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a href="#top" class="nav-logo">
+        <span class="nav-logo-m">M</span>
+        <span class="nav-logo-name">Manuela Prado</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#portfolio">Trabalhos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg-texture"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">— LASH &amp; DESIGNER</p>
+      <h1 class="hero-name">
+        Manuela<br /><em>Prado</em>
+      </h1>
+      <p class="hero-quote">"Você é o seu maior investimento."</p>
+      <div class="hero-cta-group">
+        <a href="#portfolio" class="btn btn-outline">Ver Trabalhos</a>
+        <a href="#servicos" class="btn btn-gold">Serviços &amp; Preços</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- ========== SOBRE ========== -->
+  <section class="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-text">
+        <p class="section-label">— SOBRE</p>
+        <h2>O cuidado<br /><em>no detalhe.</em></h2>
+        <p>Procedimentos pensados de forma personalizada, respeitando o formato do rosto, os traços e o estilo de cada cliente — porque beleza nunca é fórmula pronta.</p>
+        <p class="sobre-location">📍 Suzano — Centro<br />Av. Armando Salles de Oliveira, 1600 · Condomínio Flex</p>
+      </div>
+      <div class="sobre-deco">
+        <div class="deco-circle"></div>
+        <div class="deco-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <p class="section-label center">— PORTFÓLIO</p>
+      <h2 class="section-title center">Trabalhos<br /><em>Realizados</em></h2>
+
+      <!-- Filtros de categoria -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="lash">Lash Lifting</button>
+        <button class="filter-btn" data-filter="sobrancelha">Sobrancelhas</button>
+        <button class="filter-btn" data-filter="epilacao">Epilação</button>
+      </div>
+
+      <!-- Grid de fotos — substitua os src pelas suas fotos reais -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-item" data-category="lash">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="assets/img/lash-1.jpg" alt="Lash Lifting resultado" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="portfolio-overlay">
+                <span>Lash Lifting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="lash">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="assets/img/lash-2.jpg" alt="Lash Lifting curvatura" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="portfolio-overlay">
+                <span>Lash Lifting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="sobrancelha">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="assets/img/design-henna-1.jpg" alt="Design com Henna" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="portfolio-overlay">
+                <span>Design com Henna</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="sobrancelha">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="assets/img/design-1.jpg" alt="Design Personalizado" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="portfolio-overlay">
+                <span>Design Personalizado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="sobrancelha">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="assets/img/design-2.jpg" alt="Design Personalizado" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="portfolio-overlay">
+                <span>Design Personalizado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="epilacao">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="assets/img/epilacao-1.jpg" alt="Epilação Egípcia" loading="lazy" onerror="this.parentElement.classList.add('img-placeholder')" />
+              <div class="portfolio-overlay">
+                <span>Epilação Egípcia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /portfolio-grid -->
+
+      <p class="portfolio-instagram-cta">
+        Ver mais no Instagram:
+        <a href="https://instagram.com/manuelaprado.beauty" target="_blank" rel="noopener noreferrer">@manuelaprado.beauty</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SERVIÇOS ========== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <p class="section-label center light">— SERVIÇOS</p>
+      <h2 class="section-title center light">Investimentos</h2>
+
+      <div class="servicos-grid">
+
+        <article class="servico-card">
+          <div class="servico-numero">i.</div>
+          <h3 class="servico-nome">Lash <em>Lifting</em></h3>
+          <p class="servico-desc">Curvatura e elevação dos cílios naturais, deixando o olhar mais aberto e descansado — sem extensões. Duração média de 6 a 8 semanas.</p>
+          <div class="servico-footer">
+            <span class="servico-preco">R$ 90,00</span>
+            <a href="#contato" class="servico-agendar">Agendar →</a>
+          </div>
+        </article>
+
+        <article class="servico-card destaque">
+          <div class="servico-numero">ii.</div>
+          <h3 class="servico-nome">Design com <em>Henna</em></h3>
+          <p class="servico-desc">Cor, definição e durabilidade. Inclui visagismo, mapeamento facial e finalização. Tonalidade selecionada de acordo com tom de pele.</p>
+          <div class="servico-footer">
+            <span class="servico-preco">R$ 40,00</span>
+            <a href="#contato" class="servico-agendar">Agendar →</a>
+          </div>
+        </article>
+
+        <article class="servico-card">
+          <div class="servico-numero">iii.</div>
+          <h3 class="servico-nome">Design <em>Personalizado</em></h3>
+          <p class="servico-desc">Visagismo e mapeamento facial para o formato ideal de cada rosto. Finalização com pasta modeladora. Traço marcado e bem definido.</p>
+          <div class="servico-footer">
+            <span class="servico-preco">R$ 30,00</span>
+            <a href="#contato" class="servico-agendar">Agendar →</a>
+          </div>
+        </article>
+
+        <article class="servico-card">
+          <div class="servico-numero">iv.</div>
+          <h3 class="servico-nome">Epilação <em>Egípcia</em></h3>
+          <p class="servico-desc">Técnica milenar com fio de algodão. Indolor, sem químicos, indicada inclusive para peles sensíveis. Buço, queixo, lateral e testa.</p>
+          <div class="servico-footer">
+            <span class="servico-preco">R$ 30,00</span>
+            <a href="#contato" class="servico-agendar">Agendar →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO / WHATSAPP ========== -->
+  <section class="contato" id="contato">
+    <div class="container contato-inner">
+      <p class="section-label center">— AGENDAMENTOS</p>
+      <h2 class="section-title center">Vamos<br /><em>Conversar?</em></h2>
+      <p class="contato-sub">O cuidado com você é o luxo que nunca sai de moda.</p>
+
+      <!-- IMPORTANTE: substitua o número abaixo pelo número real da Manuela (só dígitos) -->
+      <a
+        href="https://wa.me/5511999999999?text=Ol%C3%A1%20Manuela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-whatsapp"
+        aria-label="Falar com Manuela Prado pelo WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Agendar pelo WhatsApp
+      </a>
+
+      <div class="contato-redes">
+        <a href="https://instagram.com/manuelaprado.beauty" target="_blank" rel="noopener noreferrer" class="contato-ig">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          @manuelaprado.beauty
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Manuela <em>Prado</em></p>
+      <p class="footer-info">Av. Armando Salles de Oliveira, 1600 · Suzano — Condomínio Flex</p>
+      <p class="footer-copy">© 2026 Manuela Prado · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp (sempre visível) -->
+  <a
+    href="https://wa.me/5511999999999?text=Ol%C3%A1%20Manuela%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
